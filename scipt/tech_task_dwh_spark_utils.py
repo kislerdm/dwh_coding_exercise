@@ -1,21 +1,25 @@
+# Spark Networks GbmH - Tech Task Demo utils
+# D.Kisler <dmitry.kisler@affinitas.de>
+
 import os
 import sys
 import logging
 import inspect
 from requests import get
 
-def mkdirs(dir):
 
+def mkdirs(dir):
     """ Function: mkdir -p dir """
 
     if not os.path.exists(dir):
         os.makedirs(dir, exist_ok=True)
 
-def lineno():
 
+def lineno():
     """ Returns the current line number in the program """
 
     return inspect.currentframe().f_back.f_lineno
+
 
 class Logger:
 
@@ -38,7 +42,6 @@ class Logger:
         self.logger = logging.getLogger('logs')
 
     def send(self, msg, info=False, kill=True, state=1):
-
         """
         Function to send the message to a log file
 
@@ -57,12 +60,12 @@ class Logger:
             if self.kill and kill:
                 sys.exit(state)
 
+
 class Fetcher:
 
     """ Data fetching class """
 
     def get_flat_ids(token):
-
         """
         Function to fetch flat IDs from immobilienscout24.de using search API end-point
         see details: https://api.immobilienscout24.de/our-apis/search/queryparameters.html
@@ -73,7 +76,6 @@ class Fetcher:
         """
 
         def _get_search_data(page_number=1, flats_per_page=200):
-
             """ Function to get seach API data for Berlin """
 
             try:
@@ -92,7 +94,6 @@ class Fetcher:
                 return None, ex
 
         def _get_n_pages():
-
             """ Function to fetch number of pages and number of flats in Berlin on the immobilienscout24.de """
 
             dat, ex = _get_search_data()
@@ -130,9 +131,7 @@ class Fetcher:
 
         return flat_ids, None
 
-
     def get_flat_info(token, flat_id):
-
         """
         Function to fetch flat's data using immobilienscou24 API exposé end-point
         See details here: https://api.immobilienscout24.de/our-apis/expose/web-content.html
