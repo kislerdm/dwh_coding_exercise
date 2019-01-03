@@ -1,4 +1,4 @@
-# Technical Task for a position <br>of DWH Engineer @ Spark Networks
+# Technical Task for a position of DWH Engineer @ Spark Networks
 
 Dear candidate
 
@@ -51,7 +51,7 @@ You are free to choose your way of getting required data, e.g. web scraping, but
 
 <em>Note</em>: you may consider using one of the routing APIs to fulfil this task.
 
-You are free to choose tech stack for the pipeline architecture and for ETL/ELT/aggregation. Note that we prefer to keep the business logic as a service, i.e. in python code, and not as a database stored procedure.
+You are free to choose tech stack for the pipeline architecture and for ETL/ELT/aggregation. Note that we prefer to keep the business logic as a service, i.e. in python code, and not as database stored procedures.
 
 <em>Note</em>: we would strongly recommend you to consider employing tools/services and languages we use at DWH:
 - AWS: <strong>S3, Lambda, ECR, Fargate, CloudWatch</strong>
@@ -60,18 +60,18 @@ You are free to choose tech stack for the pipeline architecture and for ETL/ELT/
 - EDA/Reporting: <strong>Tableau</strong>, or <strong>Qlikview</strong>   
 
 Good luck and hopefully see you soon in our office for an on-side interview.
+<br>
+<br>Best regards
+<br>Dmitry Kisler
+<br><strong>DWH Team Lead</strong>
 
-<p>
-Best regards
-Dmitry Kisler
-<strong>DWH Team Lead</strong>
+Spark Networks
+<br>Mobil: +49 (0)173 522 8056
+<br><a href="mailto:dmitry.kisler@affinitas.de" target="_blank">dmitry.kisler@affinitas.de</a>
 
-<p>Spark Networks
-Mobil +49 (0)173 522 8056
-<a href="mailto:dmitry.kisler@affinitas.de" target="_blank">dmitry.kisler@affinitas.de</a>
-
-<p>Kohlfurter Straße 41/43
-10999 Berlin | Germany
+Kohlfurter Straße 41/43
+<br>10999 Berlin
+<br>Germany
 
 See why Spark Networks employees love where they work: check out our <a href="https://www.glassdoor.com/Reviews/Spark-Networks-Reviews-E31363.htm" target="_balnk">Glassdoor reviews</a>!
 
