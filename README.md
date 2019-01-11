@@ -20,9 +20,9 @@ As <em>result</em> of the exercise, it is expected to receive a link to the <em>
     - flat advertisement meta data: is active, when created, when updated, has flat's pictures
     <p><i>plus</i> any dimensions you would find useful for analysis
 
-You are free to choose your way of getting required data, e.g. web scraping, but it is advised to use the <a href="https://api.immobilienscout24.de/" target="_blank">Restful API endpoints</a> provided by immobilienscout24 (feel free to <a href="mailto:dmitry.kisler@affinitas.de" target="_blank">contact me</a> in case you struggle with accessing the APIs).
-
 <em>Note</em>: preserve all raw data imported into pipeline, but make only required dimensions accessible to an end user.
+
+You are free to choose your way of getting required data, e.g. web scraping, but it is advised to use the <a href="https://api.immobilienscout24.de/" target="_blank">Restful API endpoints</a> provided by immobilienscout24. Feel free to read the tips <em>tech_task_dwh_spark_tips.md</em>, or <a href="mailto:dmitry.kisler@affinitas.de" target="_blank">contact me</a> in case you struggle to get data, or have questions.
 
 2. Build a star, or snowflake (the one which you think is more appropriate) data model in the DB of your choice.
 
@@ -34,23 +34,7 @@ You are free to choose your way of getting required data, e.g. web scraping, but
     - dim_city
     - dim_district
 
-### Additional tasks (nice to be done)
-3. Using a tool of your choice (e.g. <em>Tableau, MS Power BI, looker, R shiny</em>), build a dashboard illustrating the price distribution for the rent flats in Berlin (as well as other KPIs you would consider useful) broken down by dimensions including:
-
-    - city, district
-    - flat size
-    - flat number of rooms
-    - house year of built
-<em>feel free to add extra dimensions</em>
-
-4. Fetch the BVG (Berlin public transport) <a href="https://daten.berlin.de/kategorie/verkehr" target="_blank">stops data</a> (name, type, longitude, latitude) and define <i>three extra features</i> for the <strong>fact_flat</strong> table:
-
-    - n_stops: the number of public transport stops within 15 min of walking distance from the flat
-    - time2public_transport: the amount of time required for a pedestrian to reach a nearest public transport stop starting from the flat
-    - time2subway: the amount of time required for a pedestrian to reach a nearest U-/S-bahn station starting from the flat
-
-<em>Note</em>: you may consider using one of the routing APIs to fulfil this task.
-
+<br>
 You are free to choose tech stack for the pipeline architecture and for ETL/ELT/aggregation. Note that we prefer to keep the business logic as a service, i.e. in python code, and not as database stored procedures.
 
 <em>Note</em>: we would strongly recommend you to consider employing tools/services and languages we use at DWH:
@@ -59,7 +43,7 @@ You are free to choose tech stack for the pipeline architecture and for ETL/ELT/
 - DSL/Programming language: <strong>Python (ver. >= 3.6.5)</strong> and <strong>SQL</strong>
 - EDA/Reporting: <strong>Tableau</strong>, or <strong>Qlikview</strong>   
 
-Good luck and hopefully see you soon in our office for an on-side interview.
+Good luck and hopefully see you soon in our headquarters for an on-side interview.
 <br>
 <br>Best regards
 <br>Dmitry Kisler
