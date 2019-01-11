@@ -66,4 +66,4 @@ if __name__ == "__main__":
 
     main()
 
-    log.send(f"Done! Elapsed time: {round(time.time()-start, 1)} sec.", info=True)
+    log.send("Done! Elapsed time: {} sec.".format(round(time.time()-start, 1)), info=True)
