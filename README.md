@@ -8,7 +8,7 @@ As <em>result</em> of the exercise, it is expected to receive a link to the <em>
 
 ## Description
 
-1. Build a scalable pipeline to pull and update on hourly basis dim and fact data of the <strong>flats in Berlin</strong> available for <em>rent</em> at <a href="https://www.immobilienscout24.de/Suche/S-T/Wohnung-Miete/Berlin/Berlin" target="_blank">immobilienscout24.de</a>.
+1. Build a scalable pipeline to fetch on hourly basis dim and fact data of the <strong>flats in Berlin</strong> available for <em>rent</em> at <a href="https://www.immobilienscout24.de/Suche/S-T/Wohnung-Miete/Berlin/Berlin" target="_blank">immobilienscout24.de</a> assuming (micro-) batch processing based on a data sample <strong><em>raw_data_example.json.zip</em></strong>.
 
     Required data dimensions:
 
@@ -21,8 +21,6 @@ As <em>result</em> of the exercise, it is expected to receive a link to the <em>
     <p><i>plus</i> any dimensions you would find useful for analysis
 
 <em>Note</em>: preserve all raw data imported into pipeline, but make only required dimensions accessible to an end user.
-
-You are free to choose your way of getting required data, e.g. web scraping, but it is advised to use the <a href="https://api.immobilienscout24.de/" target="_blank">Restful API endpoints</a> provided by immobilienscout24. Feel free to read the tips <em>tech_task_dwh_spark_tips.md</em>, or <a href="mailto:dmitry.kisler@affinitas.de" target="_blank">contact me</a> in case you struggle to get data, or have questions.
 
 2. Build a star, or snowflake (the one which you think is more appropriate) data model in the DB of your choice.
 
