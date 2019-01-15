@@ -8,7 +8,7 @@ As <em>result</em> of the exercise, it is expected to receive a link to the <em>
 
 ## Description
 
-1. Build a scalable pipeline to fetch on hourly basis dim and fact data of the <strong>flats in Berlin</strong> available for <em>rent</em> at <a href="https://www.immobilienscout24.de/Suche/S-T/Wohnung-Miete/Berlin/Berlin" target="_blank">immobilienscout24.de</a> assuming (micro-) batch processing based on a data sample <strong><em>raw_data_example.json.zip</em></strong>.
+1. Based on provided data sample <strong><em>raw_data_example.json.zip</em></strong>, build a batch processing service to load and transform data of flats in Berlin available for rent at <a href="https://www.immobilienscout24.de/Suche/S-T/Wohnung-Miete/Berlin/Berlin" target="_blank">immobilienscout24.de</a>. <em>Assume batches to appear at the pipeline input on hourly basis</em>.
 
     Required data dimensions:
 
