@@ -2,13 +2,15 @@
 
 Dear candidate
 
-As part of the recruitment process, we would like to ask you to accomplish the following assessment task which should take not more than a couple of evenings of your time. Remember to do your best and aim for an end-to-end MVP solution, but keep in mind that the purpose of the task is to check the way of how you think and approach the problem.
+As part of the recruitment process, we would like to ask you to accomplish the following assessment task which should take not more than a couple of evenings of your time. Please do your best and aim for an end-to-end MVP solution.
 
-As <em>result</em> of the exercise, it is expected to receive a link to the <em>github/gitlab/bitbucket repo</em> with working executable scripts, queries (or a docker container) and instruction on how to run the code, and with the detailed report (as <em>markdown README.md</em> file) containing justification of your tech choices.
+As <em>result</em> of the exercise, it is expected to receive a link to the <em>github/gitlab/bitbucket repo</em> with working executable code base and instruction on how to run it, and with the detailed report (as <em>markdown README.md</em> file) containing justification of your tech choices.
 
 ## Description
 
-1. Based on provided data sample <strong><em>raw_data_example.json.zip</em></strong>, build a batch processing service to load and transform data of flats in Berlin available for rent at <a href="https://www.immobilienscout24.de/Suche/S-T/Wohnung-Miete/Berlin/Berlin" target="_blank">immobilienscout24.de</a>. <em>Assume batches to appear at the pipeline input on hourly basis</em>.
+We would like to propose you to familiarise yourself with the housing market in Berlin, hence to suggest you to make data integration for the flats available for rent in Berlin. In order to complete that exercise, we would like to formulate the following task for you:
+
+1. Build a stateless service to load data batches into hot storage (database). <em>The service should consume data batches appearing at the pipeline input on hourly basis</em>. An example of expected incoming data batch is present in the repo as <strong>raw_data_example.json.zip</strong>. <p>Please preserve all raw data imported into pipeline, but make <u>only required dimensions</u> accessible to an end user.
 
     Required data dimensions:
 
@@ -18,9 +20,7 @@ As <em>result</em> of the exercise, it is expected to receive a link to the <em>
     - location: city, district, street, house number, longitude, latitude
     - agency fact data: agency name, agent name, email, phone number provided as unchanged raw data for DWH engineer user/role and as GDPR compliant/anonymised data accessible to BI
     - flat advertisement meta data: is active, when created, when updated, has flat's pictures
-    <p><i>plus</i> any dimensions you would find useful for analysis
 
-<em>Note</em>: preserve all raw data imported into pipeline, but make only required dimensions accessible to an end user.
 
 2. Build a star, or snowflake (the one which you think is more appropriate) data model in the DB of your choice.
 
@@ -33,14 +33,14 @@ As <em>result</em> of the exercise, it is expected to receive a link to the <em>
     - dim_district
 
 <br>
-You are free to choose tech stack for the pipeline architecture and for ETL/ELT/aggregation. Note that we prefer to keep the business logic as a service, i.e. in python code, and not as database stored procedures.
+You are free to choose tech stack. Note that we prefer to keep the business logic as a service, i.e. in python code, and not as database stored procedures.
 
 <em>Note</em>: we would strongly recommend you to consider employing tools/services and languages we use at DWH:
-- AWS: <strong>S3, Lambda, ECR, Fargate, CloudWatch</strong>
-- DBs: <strong>AWS RDS PostgreSQL, or AWS Redshift</strong> or <strong>Snowflake</strong>
 - DSL/Programming language: <strong>Python (ver. >= 3.6.5)</strong> and <strong>SQL</strong>
+- DBs: <strong>AWS RDS PostgreSQL, AWS Redshift, Snowflake</strong>
+- AWS: <strong>S3, Lambda, ECR, Fargate, CloudWatch</strong>
 
-Good luck and hopefully see you soon in our headquarters for an on-side interview.
+Good luck and hopefully see you soon in our headquarters for onsite interview.
 <br>
 <br>Best regards
 <br>Dmitry Kisler
