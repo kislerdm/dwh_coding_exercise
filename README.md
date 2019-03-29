@@ -39,7 +39,6 @@ You are free to choose tech stack for the pipeline architecture and for ETL/ELT/
 - AWS: <strong>S3, Lambda, ECR, Fargate, CloudWatch</strong>
 - DBs: <strong>AWS RDS PostgreSQL, or AWS Redshift</strong> or <strong>Snowflake</strong>
 - DSL/Programming language: <strong>Python (ver. >= 3.6.5)</strong> and <strong>SQL</strong>
-- EDA/Reporting: <strong>Tableau</strong>, or <strong>Qlikview</strong>   
 
 Good luck and hopefully see you soon in our headquarters for an on-side interview.
 <br>
